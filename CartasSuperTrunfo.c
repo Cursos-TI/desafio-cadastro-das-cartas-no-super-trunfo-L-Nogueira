@@ -23,14 +23,98 @@ int main() {
 
     // As variáveis terminadas em 001 correspondem a carta 1, assim como as terminadas em 002 correspondem a carta 2;
 
-    int nome_da_carta_001 = 001, nome_da_carta_002 = 002;
-    char estado_001 = ('A'), estado_002 = ('B');
-    char codigo_001[6] = ("001A"), codigo_002[6] = ("002B");
-    char nome_cidade_001[20] = ("Fortaleza"), nome_cidade_002[20] = ("Rio de Janeiro");
-    int populacao_001 = 2428678, populacao_002 = 6211223;
-    char area_001[15] = ("313,80 km²"), area_002[15] = ("1.200,33 km²");
-    float pib_001 = 73.4, pib_002 = 359.64;
-    int pontos_turisticos_001 = 20, pontos_turisticos_002 = 60;
+    int numero_da_carta_001, numero_da_carta_002;
+    char estado_001, estado_002;
+    char codigo_001[6], codigo_002[6];
+    char nome_cidade_001[20], nome_cidade_002[20];
+    int populacao_001, populacao_002;
+    float area_001[15], area_002[15];
+    float pib_001, pib_002;
+    int pontos_turisticos_001, pontos_turisticos_002;
+
+    // entrada de dados da carta 1;
+    /* 
+    
+    para esse teste a carta 1 será referente a cidade de fortaleza 
+    O número da carta será: 001
+    A letra referente ao estado será: "A"
+    O cdigo dessa carta será portanto: "001A"
+    O nome da cidade será: "Fortaleza"
+    A população será: "2428678"
+    A área será: 313.18
+    O PIB será: 73.4
+    A quantidade de pontos turísticos será: "20"
+    
+    */
+
+
+    printf("É HORA DE JOGAR, FORNEÇA OS DADOS DA PRIMEIRA CARTA \n\n");
+
+    printf("Digite o número da primeira carta: ");
+    scanf("%d", &numero_da_carta_001);
+
+    printf("Digite a letra referente ao estado de A - H: ");
+    scanf("%c", &estado_001);
+
+    printf("Digite o codigo da carta (o codigo deve ser o número da carta + a letra do estado): ");
+    scanf("%s", codigo_001);
+
+    printf("Digite o nome da cidade: ");
+    scanf("%s", nome_cidade_001);
+
+    printf("Digite a poupulação da cidade: ");
+    scanf("%d", &populacao_001);
+
+    printf("Digite a área da cidade em km2: ");
+    scanf("%f", area_001);
+
+    printf("Digite o PIB da cidade: ");
+    scanf("%f", pib_001);
+
+    printf("Digite o número de pontos turísticos da cidade: ");
+    scanf("%d", pontos_turisticos_001);
+
+    // entrada de dados da carta 2
+    /* 
+    
+    para esse teste a carta 2 será referente a cidade de rio de janeiro 
+    O número da carta será: 002
+    A letra referente ao estado será: "B"
+    O cdigo dessa carta será portanto: "002B"
+    O nome da cidade será: "Rio de Janeiro"
+    A população será: "6211223"
+    A área será: 1200.33
+    O PIB será: 359.64
+    A quantidade de pontos turísticos será: "60"
+    
+    */
+
+
+    printf("É HORA DE JOGAR, FORNEÇA OS DADOS DA SEGUNDA CARTA \n\n");
+
+    printf("Digite o número da primeira carta: ");
+    scanf("%d", &numero_da_carta_002);
+
+    printf("Digite a letra referente ao estado de A - H: ");
+    scanf("%c", &estado_002);
+
+    printf("Digite o codigo da carta (o codigo deve ser o número da carta + a letra do estado): ");
+    scanf("%s", codigo_002);
+
+    printf("Digite o nome da cidade: ");
+    scanf("%s", nome_cidade_002);
+
+    printf("Digite a poupulação da cidade: ");
+    scanf("%d", &populacao_002);
+
+    printf("Digite a área da cidade: ");
+    scanf("%f", area_002);
+
+    printf("Digite o PIB da cidade: ");
+    scanf("%f", pib_002);
+
+    printf("Digite o número de pontos turísticos da cidade: ");
+    scanf("%d", pontos_turisticos_002);
 
     // saida de dados da carta 1;
 
@@ -39,7 +123,7 @@ int main() {
     printf("Código: %s\n", codigo_001);
     printf("Nome da cidade: %s\n", nome_cidade_001);
     printf("População: %d\n", populacao_001);
-    printf("Área: %s\n", area_001);
+    printf("Área: %s km²\n", area_001);
     printf("PIB: %.2f bilhões de reais\n", pib_001);
     printf("Pontos turísticos: %d\n", pontos_turisticos_001);
 
@@ -50,7 +134,7 @@ int main() {
     printf("Código: %s\n", codigo_002);
     printf("Nome da cidade: %s\n", nome_cidade_002);
     printf("População: %d\n", populacao_002);
-    printf("Área: %s\n", area_002);
+    printf("Área: %s km²\n", area_002);
     printf("PIB: %.2f bilhões de reais\n", pib_002);
     printf("Pontos turísticos: %d\n", pontos_turisticos_002);
 
