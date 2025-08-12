@@ -23,8 +23,7 @@ int main() {
 
     // As variáveis terminadas em 01 correspondem a carta 1, assim como as terminadas em 02 correspondem a carta 2;
 
-    int numero_da_carta01, numero_da_carta02;
-    char estado01[3], estado02[3];
+    char estado01, estado02;
     char codigo01[6], codigo02[6];
     char nome_cidade01[25], nome_cidade02[25];
     int populacao01, populacao02;
@@ -50,11 +49,8 @@ int main() {
 
     printf("É HORA DE JOGAR, FORNEÇA OS DADOS DA PRIMEIRA CARTA \n\n");
 
-    printf("Digite o número da primeira carta: ");
-    scanf("%d", &numero_da_carta01);
-
     printf("Digite a letra referente ao estado de A - H: ");
-    scanf("%s", estado01);
+    scanf("%c", &estado01);
 
     printf("Digite o codigo da carta (o codigo deve ser o número da carta + a letra do estado): ");
     scanf("%s", codigo01);
@@ -94,11 +90,8 @@ int main() {
 
     printf("É HORA DE JOGAR, FORNEÇA OS DADOS DA SEGUNDA CARTA \n\n");
 
-    printf("Digite o número da segunda carta: ");
-    scanf("%d", &numero_da_carta02);
-
     printf("Digite a letra referente ao estado de A - H: ");
-    scanf("%s", estado02);
+    scanf(" %c", &estado02);
 
     printf("Digite o codigo da carta (o codigo deve ser o número da carta + a letra do estado): ");
     scanf("%s", codigo02);
@@ -123,8 +116,8 @@ int main() {
 
     // saida de dados da carta 1;
 
-    printf("Número da carta: %d\n", numero_da_carta01);
-    printf("Estado: %s\n", estado01);
+    printf("Carta 1: \n");
+    printf("Estado: %c\n", estado01);
     printf("Código: %s\n", codigo01);
     printf("Nome da cidade: %s\n", nome_cidade01);
     printf("População: %d\n", populacao01);
@@ -135,8 +128,8 @@ int main() {
 
     // saida de dados da carta 2;
 
-    printf("Número da carta: %d\n", numero_da_carta02);
-    printf("Estado: %s\n", estado02);
+    printf("Carta 2: \n");
+    printf("Estado: %c\n", estado02);
     printf("Código: %s\n", codigo02);
     printf("Nome da cidade: %s\n", nome_cidade02);
     printf("População: %d\n", populacao02);
